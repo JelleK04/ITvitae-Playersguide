@@ -16,5 +16,7 @@
         System.out.println("boolean: " + myBoolean);
         char myChar = 'a';
         System.out.println("char: " + myChar);
+        String myString = "Text";
+        System.out.println("String: " + myString);
     }
 }
