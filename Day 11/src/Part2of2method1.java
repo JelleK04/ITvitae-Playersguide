@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Part2of2 {
+public class Part2of2method1 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("1. Rope");
