@@ -18,7 +18,7 @@ public class Part2of2method2 {
         if (name.equals(nameDiscount)) {
             discount = 0.5F;
         }
-        System.out.println("What number do you want to see the price of?");
+        System.out.println("What item do you want to see the price of?");
 
         switch (myScanner.nextInt()) {
             case 1:
