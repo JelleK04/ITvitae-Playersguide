@@ -19,7 +19,7 @@ public class Main {
                 System.out.println("You guessed the number!");
             } else if (guess < number) {
                 System.out.println(guess + " is too low.");
-            } else if (guess > number) {
+            } else  {
                 System.out.println(guess + " is too high.");
             }
         }
