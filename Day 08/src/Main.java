@@ -7,7 +7,7 @@ public class Main {
         int targetColumn = myScanner.nextInt();
         System.out.println("Target row?");
         int targetRow = myScanner.nextInt();
-        System.out.println("Deploy to:");
+        System.out.println("\u001B[31mDeploy to:");
         System.out.println("(" + targetColumn + ", " + (targetRow - 1) + ")");
         System.out.println("(" + targetColumn+ ", " + (targetRow + 1) + ")");
         System.out.println("(" + (targetColumn -1) + ", " + targetRow + ")" );
