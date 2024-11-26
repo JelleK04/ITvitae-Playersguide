@@ -1,5 +1,6 @@
 //This class applies one of the methods of day 16 (of the "new" players guide, Players_guide_230714) to day 14
 
+
 import java.util.Arrays;
 import java.util.Scanner;
 
