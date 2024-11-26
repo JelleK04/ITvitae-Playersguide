@@ -5,13 +5,12 @@ import java.util.Scanner;
 
 public class Day14Improved {
     public static void main(String[] args) {
-        Scanner myScanner = new Scanner(System.in);
         // Makes empty array with length of five elements
         int[] numbers1 = new int[5];
         // Lets user input the five elements
         String question = new String("Please input an integer and press enter.");
         for (int i = 0; i < numbers1.length; i++) {
-            numbers1[i] = askForNumber(question);;
+            numbers1[i] = askForNumber(question);
         }
         // Makes a new array with same length and elements as the first array
         int[] numbers2 = new int[numbers1.length];
