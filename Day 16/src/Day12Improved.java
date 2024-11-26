@@ -1,17 +1,16 @@
+//This class applies one of the methods of day 16 (of the "new" players guide, Players_guide_230714) to day 12
+
 import java.util.Scanner;
-public class Main {
+
+public class Day12Improved {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         int number;
-        do {
-            System.out.println("Player 1, enter a number ranging from 0 to 100");
-            number = myScanner.nextInt();
-        }
-        while (number < 0 || number > 100);
+        number = askForNumberInRange("Player 1, enter a number ranging for 0 to 100.", 0, 100);
         for (int i = 0; i < 50; i++) {
             System.out.println();
         }
-        System.out.println("User 2, guess the number.");
+        System.out.print("User 2, guess the number. ");
         int guess;
         do {
             guess = myScanner.nextInt();
@@ -27,4 +26,14 @@ public class Main {
         }
         while (guess != number);
     }
+    static int askForNumberInRange(String text, int min, int max) {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println(text);
+        int number = myScanner.nextInt();
+        while (number < min || number > max) {
+            System.out.println(number + " falls outside the specified range, try again.");
+            number = myScanner.nextInt();
+        }
+        return number;
+}
 }
