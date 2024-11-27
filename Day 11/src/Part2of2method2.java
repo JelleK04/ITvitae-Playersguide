@@ -28,10 +28,10 @@ public class Part2of2method2 {
                 System.out.print("Torches cost " + discount * 15 + " gold.");
                 break;
             case 3:
-                System.out.print("Climbing Equipment costs" + discount * 25 + " gold.");
+                System.out.print("Climbing Equipment costs " + discount * 25 + " gold.");
                 break;
             case 4:
-                System.out.print("Clean Water costs" + discount * 1 + " gold.");
+                System.out.print("Clean Water costs " + discount * 1 + " gold.");
                 break;
             case 5:
                 System.out.print("The Machete costs " + discount * 20 + " gold.");
