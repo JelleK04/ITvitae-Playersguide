@@ -4,7 +4,7 @@ public class Switch {
         Scanner myScanner = new Scanner(System.in);
         State chestState = State.LOCKED;
         String input;
-        while (1 == 1) {
+        while (true) {
             switch (chestState) {
                 case OPEN:
                     System.out.println("The chest is open. What do you want to do?");
