@@ -13,14 +13,17 @@ public class Part2of2method2 {
         System.out.println("7. Food Supplies");
         String nameDiscount = "Jelle Kruijt";
         float discount = 1F;
+        System.out.println("What item do you want to see the price of?");
+        int input = myScanner.nextInt();
+        myScanner.nextLine();
         System.out.println("What is your name?");
         String name = myScanner.nextLine();
         if (name.equals(nameDiscount)) {
             discount = 0.5F;
         }
-        System.out.println("What item do you want to see the price of?");
 
-        switch (myScanner.nextInt()) {
+
+        switch (input) {
             case 1:
                 System.out.print("The rope cost " + discount * 10 + " gold");
                 break;
