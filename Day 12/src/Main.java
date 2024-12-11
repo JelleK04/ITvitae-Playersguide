@@ -4,7 +4,7 @@ public class Main {
         Scanner myScanner = new Scanner(System.in);
         int number;
         do {
-            System.out.println("Player 1, enter a number ranging from 0 to 100");
+            System.out.println("Pilot, enter a number ranging from 0 to 100");
             number = myScanner.nextInt();
         }
         while (number < 0 || number > 100);
@@ -15,16 +15,16 @@ public class Main {
         int guess;
         do {
             guess = myScanner.nextInt();
-            if (guess == number) {
-                System.out.println("You guessed the number!");
-            } else if (guess < number) {
+             if (guess < number) {
                 System.out.println(guess + " is too low.");
                 System.out.println("What is your next guess?");
-            } else  {
+             }
+            if (guess > number)  {
                 System.out.println(guess + " is too high.");
                 System.out.println("What is your next guess?");
             }
         }
         while (guess != number);
+        System.out.println("You guessed the number!");
     }
 }
