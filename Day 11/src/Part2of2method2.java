@@ -14,7 +14,7 @@ public class Part2of2method2 {
         String nameDiscount = "Jelle Kruijt";
         float discount = 1F;
         System.out.println("What item do you want to see the price of?");
-        int input = myScanner.nextInt();
+        int chosenItem = myScanner.nextInt();
         myScanner.nextLine();
         System.out.println("What is your name?");
         String name = myScanner.nextLine();
@@ -23,7 +23,7 @@ public class Part2of2method2 {
         }
 
 
-        switch (input) {
+        switch (chosenItem) {
             case 1:
                 System.out.print("The rope cost " + discount * 10 + " gold");
                 break;
@@ -45,6 +45,8 @@ public class Part2of2method2 {
             case 7:
                 System.out.print("Food Supplies cost " + discount * 1 + " gold");
                 break;
+            default:
+                System.out.println("We don't have that item.");
         }
     }
 }

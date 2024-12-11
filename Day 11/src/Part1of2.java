@@ -33,6 +33,8 @@ public class Part1of2 {
             case 7:
                 System.out.println("Food Supplies cost 1 gold");
                 break;
+            default:
+                System.out.println("We don't have that item.");
 
 
         }

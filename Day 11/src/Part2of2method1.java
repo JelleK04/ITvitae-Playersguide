@@ -10,12 +10,13 @@ public class Part2of2method1 {
         System.out.println("6. Canoe");
         System.out.println("7. Food Supplies");
         String nameDiscount = "Jelle Kruijt";
+        System.out.println("What item do you want to see the price of?");
+        int chosenItem = myScanner.nextInt();
+        myScanner.nextLine();
         System.out.println("What is your name?");
-        String name = myScanner.nextLine();
-        System.out.println("What number do you want to see the price of?");
 
-        if (name.equals(nameDiscount)) {
-            switch (myScanner.nextInt()) {
+        if (myScanner.nextLine().equals(nameDiscount)) {
+            switch (chosenItem) {
                 case 1:
                     System.out.println("The rope costs 5 gold.");
                     break;
@@ -39,7 +40,7 @@ public class Part2of2method1 {
                     break;
             }
         } else  {
-                switch (myScanner.nextInt()) {
+                switch (chosenItem) {
                     case 1:
                         System.out.println("The rope costs 10 gold.");
                         break;
@@ -61,6 +62,8 @@ public class Part2of2method1 {
                     case 7:
                         System.out.println("Food Supplies cost 1 gold");
                         break;
+                    default:
+                        System.out.println("We don't have that item");
                 }
         }
     }
