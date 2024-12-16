@@ -1,16 +1,16 @@
 public class Arrow {
-    enum Arrowhead {
+    public enum Arrowhead {
         STEEL,
         WOOD,
         OBSIDIAN,
-
     }
 
-    enum Fletching {
+    public enum Fletching {
         PLASTIC,
         TURKEYFEATHERS,
         GOOSEFEATHERS,
     }
+
    private Arrow.Arrowhead arrowhead;
    private Arrow.Fletching fletching;
    private float lengthInCm;
