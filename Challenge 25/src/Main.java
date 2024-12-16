@@ -1,5 +1,3 @@
-// 2nd objective: Allow a user to pick the arrowhead, fletching type, and length and then create a new Arrow instance.
-// create a new Arrow instance after picking arrowhead, fletching type and length???????????????
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
