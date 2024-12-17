@@ -14,7 +14,7 @@ public class Main {
             } else if (i % 3 == 0 && i % 5 != 0) {
                 System.out.println(i + ": " + ANSI_RED + "Fire" + ANSI_RESET);
                 //checks if i is divisible by 6 but not by 3
-            } else if (i % 3 != 0 && i % 5 == 0) {
+            } else if (i % 3 != 0) {
                 System.out.println(i + ": " + ANSI_BLUE + "Electric" + ANSI_RESET);
                 //only activates when i is divisible by 3 and 5
             } else {
