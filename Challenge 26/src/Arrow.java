@@ -11,11 +11,11 @@ public class Arrow {
         GOOSEFEATHERS,
     }
 
-   private Arrow.Arrowhead arrowhead;
-   private Arrow.Fletching fletching;
-   private float lengthInCm;
+    private Arrow.Arrowhead arrowhead;
+    private Arrow.Fletching fletching;
+    private float lengthInCm;
 
-    Arrow (String arrowheadInput, String fletchingInput, float lengthInCmInput) {
+    Arrow(String arrowheadInput, String fletchingInput, float lengthInCmInput) {
         switch (arrowheadInput.toLowerCase().trim()) {
             case "steel":
                 arrowhead = Arrow.Arrowhead.STEEL;
@@ -41,15 +41,15 @@ public class Arrow {
         lengthInCm = lengthInCmInput;
     }
 
-    public Arrowhead getArrowhead () {
+    public Arrowhead getArrowhead() {
         return arrowhead;
     }
 
-    public Fletching getFletching () {
+    public Fletching getFletching() {
         return fletching;
     }
 
-    public float getLengthInCm () {
+    public float getLengthInCm() {
         return lengthInCm;
     }
 
